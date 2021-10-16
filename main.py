@@ -17,5 +17,3 @@ def unregister():
     unregister_weight()
     unregister_animation()
     unregister_cleanup()
-
-register()
