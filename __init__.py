@@ -1,6 +1,6 @@
 bl_info = {
     "name": "FFXV Utilities",
-    "blender": (2, 79, 0),
+    "blender": (2, 8, 0),
     "category": "Object"
 }
 

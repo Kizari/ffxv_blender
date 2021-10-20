@@ -12,7 +12,7 @@ def register_animation():
     register_class(RemoveTranslationZOperator)
 
 def unregister_animation():
-    register_class(RemoveTranslationZOperator)
-    register_class(RemoveTranslationYOperator)
+    unregister_class(RemoveTranslationZOperator)
+    unregister_class(RemoveTranslationYOperator)
     unregister_class(RemoveTranslationXOperator)
     unregister_class(AnimationPanel)
