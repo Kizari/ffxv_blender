@@ -1,8 +1,8 @@
 bl_info = {
     "name": "FFXV Utilities",
-    "description": "An add-on for Blender that provides various utility functions to make working with FFXV assets easier.",
+    "description": "Provides various utility functions to make working with FFXV assets easier.",
     "author": "Kizari",
-    "version": (0, 0, 2),
+    "version": (0, 0, 3),
     "blender": (2, 80, 0),
     "location": "3D View > Tools",
     "wiki_url": "https://github.com/Kizari/ffxv_blender",
