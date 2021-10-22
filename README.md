@@ -56,11 +56,18 @@ Your model likely has 2 vertices sharing the same location along the seams of yo
 
 If you encounter any problems with the add-on, please submit an Issue here with the appropriate tag. If you are able to include any error messages from Blender, and as much detail relevant to the project you were working on and what you were doing at the time the issue occured, that would help immensely.
 
+**Known Issues**
+- Remove Unused Bones is quite slow if Unused Vertex Groups aren't removed first
+- Smooth Seams sometimes doesn't work on certain meshes
+
 # Contributing
 
 Would be more than happy to include features or scripts from others that make FFXV mods to keep everything together in one place for the community. Scripts would be best submitted as an Issue with the "enhancement" tag, or a pull request. Alternatively, feel free to contact me directly and I can work with you to get it sorted.
 
 # Changelog
 
-**Version 1.0.0**
+**Version 0.0.2**
+- Added support for Blender 2.8+
+
+**Version 0.0.1**
 - Add-on released
