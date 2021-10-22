@@ -10,7 +10,10 @@ class DeleteEmptiesOperator(bpy.types.Operator):
 
         for object in bpy.data.objects:
             if type(object.data).__name__ == "NoneType":
-                object.select = True
+                if bpy.app.version >= (2, 80, 0):
+                    object.select_set(state=True)
+                else:
+                    object.select = True
                 
         bpy.ops.object.delete()
         return {'FINISHED'}

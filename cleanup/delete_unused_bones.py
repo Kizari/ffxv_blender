@@ -19,19 +19,18 @@ class DeleteUnusedBonesOperator(bpy.types.Operator):
 
         bonesToKeep = []
         bonesToKeep.append("C_Hip")
+        
         for mesh in meshes:
-            for group in mesh.vertex_groups:
-                if group.name in bonesToKeep:
-                    continue
-                for vertex in mesh.data.vertices:
-                    done = False
-                    for subgroup in vertex.groups:
-                        if subgroup.group == group.index and subgroup.weight > 0:
-                            bonesToKeep.append(group.name)
-                            done = True
-                            break
-                    if done:
-                        break
+            groups = {i: False for i, k in enumerate(mesh.vertex_groups)}
+
+            for vertex in mesh.data.vertices:
+                for group in vertex.groups:
+                    if group.weight > 0:
+                        groups[group.group] = True
+
+            for index, used in sorted(groups.items(), reverse=True):
+                if used:
+                    bonesToKeep.append(mesh.vertex_groups[index].name)
 
         current_mode = context.object.mode
         bpy.ops.object.mode_set(mode='EDIT')

@@ -59,7 +59,6 @@ Your model likely has 2 vertices sharing the same location along the seams of yo
 If you encounter any problems with the add-on, please submit an Issue here with the appropriate tag. If you are able to include any error messages from Blender, and as much detail relevant to the project you were working on and what you were doing at the time the issue occured, that would help immensely.
 
 **Known Issues**
-- Remove Unused Bones is quite slow if Unused Vertex Groups aren't removed first
 - Smooth Seams sometimes doesn't work on certain meshes
 
 # Contributing
