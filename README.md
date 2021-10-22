@@ -2,6 +2,8 @@
 
 An add-on for Blender that provides various utility functions to make working with FFXV assets easier.
 
+Compatible with Blender 2.79 and later.
+
 Please check back for updates from time to time. Any new functionality will be listed in the changelog at the bottom of this page.
 
 # Installation
