@@ -67,6 +67,10 @@ Would be more than happy to include features or scripts from others that make FF
 
 # Changelog
 
+**Version 0.0.3**
+- Improved performance of Remove Unused Bones on objects with many many vertex groups
+- Fixed bug where Remove Empties would throw an error in Blender 2.8+
+
 **Version 0.0.2**
 - Added support for Blender 2.8+
 
