@@ -1,3 +1,5 @@
+**NOTICE: This add-on has been merged with [our much bigger FFXV modding tool, Flagrum](https://github.com/Kizari/Flagrum). Due to this, this repository is no longer being updated or maintained.**
+
 # FFXV Blender Utilities
 
 An add-on for Blender that provides various utility functions to make working with FFXV assets easier.
